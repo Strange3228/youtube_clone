@@ -5,7 +5,7 @@ import {
   Feed,
   VideoDetail,
   SearchFeed,
-  ChannelDetails,
+  ChannelDetail,
 } from "./components";
 
 const App = () => (
@@ -15,7 +15,7 @@ const App = () => (
       <Routes>
         <Route path="/" exact element={<Feed />} />
         <Route path="/video/:id" element={<VideoDetail />} />
-        <Route path="/channel/:id" element={<ChannelDetails />} />
+        <Route path="/channel/:id" element={<ChannelDetail />} />
         <Route path="/search/:searchTerm" element={<SearchFeed />} />
       </Routes>
     </Box>
